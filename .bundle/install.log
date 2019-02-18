@@ -1,0 +1,162 @@
+# Logfile created on 2019-02-18 09:17:02 -0500 by logger.rb/61378
+I, [2019-02-18T09:17:02.348385 #56530]  INFO -- : 0:  rake (10.4.2) from /Users/aaj3f/.rvm/gems/ruby-2.5.3/specifications/rake-10.4.2.gemspec
+I, [2019-02-18T09:17:02.349862 #56530]  INFO -- : 0:  i18n (0.7.0) from /Users/aaj3f/.rvm/gems/ruby-2.5.3/specifications/i18n-0.7.0.gemspec
+E, [2019-02-18T09:17:03.007917 #56530] ERROR -- : Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+    current directory: /Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/json-1.8.3/ext/json/ext/generator
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/bin/ruby -r ./siteconf20190218-56530-1yofhgf.rb extconf.rb 
+creating Makefile
+
+current directory: /Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/json-1.8.3/ext/json/ext/generator
+make "DESTDIR=" clean
+
+current directory: /Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/json-1.8.3/ext/json/ext/generator
+make "DESTDIR="
+compiling generator.c
+generator.c:861:25: error: use of undeclared identifier 'rb_cFixnum'
+    } else if (klass == rb_cFixnum) {
+                        ^
+generator.c:863:25: error: use of undeclared identifier 'rb_cBignum'
+    } else if (klass == rb_cBignum) {
+                        ^
+generator.c:975:5: warning: division by zero is undefined [-Wdivision-by-zero]
+    rb_scan_args(argc, argv, "01", &opts);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2182:9: note: expanded from macro 'rb_scan_args'
+        rb_scan_args0(argc,argvp,fmt,\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2355:9: note: expanded from macro 'rb_scan_args0'
+                     (rb_scan_args_verify(fmt, varc), vars))
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2240:11: note: expanded from macro 'rb_scan_args_verify'
+        verify = rb_scan_args_verify_count(fmt, varc); \
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 4 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2206:6: note: expanded from macro 'rb_scan_args_count_hash'
+     rb_scan_args_count_block(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2201:6: note: expanded from macro 'rb_scan_args_count_block'
+     rb_scan_args_count_end(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2197:12: note: expanded from macro 'rb_scan_args_count_end'
+    ((vari)/(!fmt[ofs] || rb_scan_args_bad_format(fmt)))
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generator.c:975:5: warning: division by zero is undefined [-Wdivision-by-zero]
+    rb_scan_args(argc, argv, "01", &opts);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2182:9: note: expanded from macro 'rb_scan_args'
+        rb_scan_args0(argc,argvp,fmt,\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2355:9: note: expanded from macro 'rb_scan_args0'
+                     (rb_scan_args_verify(fmt, varc), vars))
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2240:11: note: expanded from macro 'rb_scan_args_verify'
+        verify = rb_scan_args_verify_count(fmt, varc); \
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 4 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2206:6: note: expanded from macro 'rb_scan_args_count_hash'
+     rb_scan_args_count_block(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2202:6: note: expanded from macro 'rb_scan_args_count_block'
+     rb_scan_args_count_end(fmt, ofs+1, varc, vari+1))
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2197:12: note: expanded from macro 'rb_scan_args_count_end'
+    ((vari)/(!fmt[ofs] || rb_scan_args_bad_format(fmt)))
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generator.c:975:5: warning: division by zero is undefined [-Wdivision-by-zero]
+    rb_scan_args(argc, argv, "01", &opts);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2182:9: note: expanded from macro 'rb_scan_args'
+        rb_scan_args0(argc,argvp,fmt,\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2355:9: note: expanded from macro 'rb_scan_args0'
+                     (rb_scan_args_verify(fmt, varc), vars))
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2240:11: note: expanded from macro 'rb_scan_args_verify'
+        verify = rb_scan_args_verify_count(fmt, varc); \
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 4 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2207:6: note: expanded from macro 'rb_scan_args_count_hash'
+     rb_scan_args_count_block(fmt, ofs+1, varc, vari+1))
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2201:6: note: expanded from macro 'rb_scan_args_count_block'
+     rb_scan_args_count_end(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2197:12: note: expanded from macro 'rb_scan_args_count_end'
+    ((vari)/(!fmt[ofs] || rb_scan_args_bad_format(fmt)))
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generator.c:975:5: warning: division by zero is undefined [-Wdivision-by-zero]
+    rb_scan_args(argc, argv, "01", &opts);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2182:9: note: expanded from macro 'rb_scan_args'
+        rb_scan_args0(argc,argvp,fmt,\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2355:9: note: expanded from macro 'rb_scan_args0'
+                     (rb_scan_args_verify(fmt, varc), vars))
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2240:11: note: expanded from macro 'rb_scan_args_verify'
+        verify = rb_scan_args_verify_count(fmt, varc); \
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 4 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2206:6: note: expanded from macro 'rb_scan_args_count_hash'
+     rb_scan_args_count_block(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2201:6: note: expanded from macro 'rb_scan_args_count_block'
+     rb_scan_args_count_end(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2197:12: note: expanded from macro 'rb_scan_args_count_end'
+    ((vari)/(!fmt[ofs] || rb_scan_args_bad_format(fmt)))
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generator.c:975:5: warning: division by zero is undefined [-Wdivision-by-zero]
+    rb_scan_args(argc, argv, "01", &opts);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2182:9: note: expanded from macro 'rb_scan_args'
+        rb_scan_args0(argc,argvp,fmt,\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2355:9: note: expanded from macro 'rb_scan_args0'
+                     (rb_scan_args_verify(fmt, varc), vars))
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2240:11: note: expanded from macro 'rb_scan_args_verify'
+        verify = rb_scan_args_verify_count(fmt, varc); \
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 4 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2206:6: note: expanded from macro 'rb_scan_args_count_hash'
+     rb_scan_args_count_block(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2201:6: note: expanded from macro 'rb_scan_args_count_block'
+     rb_scan_args_count_end(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2197:12: note: expanded from macro 'rb_scan_args_count_end'
+    ((vari)/(!fmt[ofs] || rb_scan_args_bad_format(fmt)))
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generator.c:975:5: warning: division by zero is undefined [-Wdivision-by-zero]
+    rb_scan_args(argc, argv, "01", &opts);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2182:9: note: expanded from macro 'rb_scan_args'
+        rb_scan_args0(argc,argvp,fmt,\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2355:9: note: expanded from macro 'rb_scan_args0'
+                     (rb_scan_args_verify(fmt, varc), vars))
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2240:11: note: expanded from macro 'rb_scan_args_verify'
+        verify = rb_scan_args_verify_count(fmt, varc); \
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 5 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2206:6: note: expanded from macro 'rb_scan_args_count_hash'
+     rb_scan_args_count_block(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2201:6: note: expanded from macro 'rb_scan_args_count_block'
+     rb_scan_args_count_end(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/ruby.h:2197:12: note: expanded from macro 'rb_scan_args_count_end'
+    ((vari)/(!fmt[ofs] || rb_scan_args_bad_format(fmt)))
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6 warnings and 2 errors generated.
+make: *** [generator.o] Error 1
+
+make failed, exit code 2
+
+Gem files will remain installed in /Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/json-1.8.3 for inspection.
+Results logged to /Users/aaj3f/.rvm/gems/ruby-2.5.3/extensions/x86_64-darwin-18/2.5.0/json-1.8.3/gem_make.out
+
+/Users/aaj3f/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/rubygems/ext/builder.rb:92:in `run'  \n/Users/aaj3f/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/rubygems/ext/builder.rb:52:in `block in make'  \n/Users/aaj3f/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/rubygems/ext/builder.rb:44:in `each'  \n/Users/aaj3f/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/rubygems/ext/builder.rb:44:in `make'  \n/Users/aaj3f/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/rubygems/ext/ext_conf_builder.rb:61:in `block in build'  \n/Users/aaj3f/.rvm/rubies/ruby-2.5.3/lib/ruby/2.5.0/tempfile.rb:295:in `open'  \n/Users/aaj3f/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/rubygems/ext/ext_conf_builder.rb:30:in `build'  \n/Users/aaj3f/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/rubygems/ext/builder.rb:164:in `block (2 levels) in build_extension'  \n/Users/aaj3f/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/rubygems/ext/builder.rb:163:in `chdir'  \n/Users/aaj3f/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/rubygems/ext/builder.rb:163:in `block in build_extension'  \n/Users/aaj3f/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/rubygems/ext/builder.rb:162:in `synchronize'  \n/Users/aaj3f/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/rubygems/ext/builder.rb:162:in `build_extension'  \n/Users/aaj3f/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/rubygems/ext/builder.rb:201:in `block in build_extensions'  \n/Users/aaj3f/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/rubygems/ext/builder.rb:198:in `each'  \n/Users/aaj3f/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/rubygems/ext/builder.rb:198:in `build_extensions'  \n/Users/aaj3f/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/rubygems/installer.rb:777:in `build_extensions'  \n/Users/aaj3f/.rvm/rubies/ruby-2.5.3/lib/ruby/site_ruby/2.5.0/rubygems/installer.rb:309:in `install'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:101:in `block in install'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:118:in `preserve_paths'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/bundler-1.5.1/lib/bundler/source/rubygems.rb:94:in `install'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/bundler-1.5.1/lib/bundler/installer.rb:111:in `block in install_gem_from_spec'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/bundler-1.5.1/lib/bundler/rubygems_integration.rb:150:in `with_build_args'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/bundler-1.5.1/lib/bundler/installer.rb:110:in `install_gem_from_spec'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/bundler-1.5.1/lib/bundler/installer.rb:295:in `block in install_sequentially'  \n/Users/aaj3f/.rvm/rubies/ruby-2.5.3/lib/ruby/2.5.0/forwardable.rb:229:in `each'  \n/Users/aaj3f/.rvm/rubies/ruby-2.5.3/lib/ruby/2.5.0/forwardable.rb:229:in `each'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/bundler-1.5.1/lib/bundler/installer.rb:294:in `install_sequentially'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/bundler-1.5.1/lib/bundler/installer.rb:97:in `run'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/bundler-1.5.1/lib/bundler/installer.rb:15:in `install'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/bundler-1.5.1/lib/bundler/cli.rb:257:in `install'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/bundler-1.5.1/lib/bundler/vendor/thor/command.rb:27:in `run'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/bundler-1.5.1/lib/bundler/vendor/thor/invocation.rb:120:in `invoke_command'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/bundler-1.5.1/lib/bundler/vendor/thor.rb:363:in `dispatch'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/bundler-1.5.1/lib/bundler/vendor/thor/base.rb:438:in `start'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/bundler-1.5.1/lib/bundler/cli.rb:10:in `start'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/bundler-1.5.1/bin/bundle:22:in `block in <top (required)>'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/bundler-1.5.1/lib/bundler/friendly_errors.rb:5:in `with_friendly_errors'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/gems/bundler-1.5.1/bin/bundle:22:in `<top (required)>'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/bin/bundle:23:in `load'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/bin/bundle:23:in `<main>'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/bin/ruby_executable_hooks:24:in `eval'  \n/Users/aaj3f/.rvm/gems/ruby-2.5.3/bin/ruby_executable_hooks:24:in `<main>'
